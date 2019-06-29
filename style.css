@@ -1,0 +1,114 @@
+@font-face {
+    font-family: robotoRegular;
+    src: url(RobotoTTF/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: robotoMedium;
+    src: url(RobotoTTF/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: robotoBold;
+    src: url(RobotoTTF/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: robotoBlack;
+    src: url(RobotoTTF/Roboto-Black.ttf);
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: robotoRegular;
+    line-height: 23px;
+    font-size: 14px;
+}
+h1 {
+    font-family: robotoBold;
+    margin: 0;
+    font-size: 14px;
+}
+p {
+    margin: 5px 0 15px 0;
+    color: #636363;
+}
+.main-container {
+    display: flex;
+}
+article {
+    width: 50%;
+    box-sizing: border-box;
+}
+section {
+    padding-bottom: 40px;
+}
+.left-article {
+    background-image: url('img/Background.png');
+    padding: 65px 40px 0 40px;
+    color: #fff;
+    font-size: 14px;
+    background-size: cover;
+}
+.title {
+    text-align: right;
+    font-family: robotoBold;
+}
+.profile-picture {
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    background-image: url(img/matt.png);
+    background-position: 325px 375px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.profile-picture-wrap {
+    text-align: center;
+    padding-top: 130px;
+}
+.description {
+    padding: 40px 0;
+    text-align: center;
+}
+.followMe {
+    padding: 15px 0;
+}
+.followMe > a {
+    color: #f8e71c;
+    cursor: pointer;
+}
+.mail-container {
+    text-align: center;
+    padding-top: 60px;
+}
+.mail-wrapper {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.article-right {
+    padding: 65px;
+}
+.title-description {
+    color: #5f199d;
+    text-transform: uppercase;
+    font-family: robotoRegular;
+}
+.download-link {
+    text-decoration: none;
+    font-family: robotoBlack;
+    text-transform: uppercase;
+    color: #5f199d;
+}
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-wrap: wrap;
+    }
+    article {
+        width: 100%;
+    }
+}
